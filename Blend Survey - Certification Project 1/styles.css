@@ -1,0 +1,116 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Negro para el fondo */
+    color: #fff; /* Blanco para el texto */
+    margin: 10px;
+    padding: 20px 50px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Blanco para el texto */
+    font-size:40;
+}
+
+#Description {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto; /* Para centrar horizontalmente */
+    background-color: #333; /* Color de fondo igual al del body */
+    padding: 10px; /* Espaciado interno para que no sea más grueso */
+}
+
+form {
+    background-color: #f0f0f0; /* Gris claro para el fondo del formulario */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #333; /* Negro para el texto */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Gris para el borde */
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra en los inputs */
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="%23333"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: up;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: block; /* Cambiamos de inline-block a block */
+    margin-bottom: 5px; /* Agregamos un margen inferior para separar cada par */
+
+}
+
+textarea {
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    font-weight: bold; /* Grosor de la fuente */
+    resize: vertical;
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #333; /* Negro para el fondo */
+    color: #fff; /* Blanco para el texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Para centrar horizontalmente */
+    display: block; /* Asegurar que ocupe todo el ancho disponible */
+    width: 200px; /* Ancho mayor */
+}
+
+
+button[type="submit"]:hover {
+    background-color: #555; /* Cambio de color al pasar el ratón */
+}
+
+#error-message {
+    color: red; /* Rojo para los mensajes de error */
+}
+
+.pregunta {
+    background-color: rgb(210,210,210); /* Gris oscuro para el fondo de las preguntas */
+    color: black; /* Blanco para el texto de las preguntas */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra en las preguntas */
+    font-weight: bold;
+}

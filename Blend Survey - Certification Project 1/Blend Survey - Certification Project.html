@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend - Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Blend - Survey</h1>
+    <p id="description"> Esta es una encuesta con el fin de entender mas a nuestro cliente, entender sus necesidades, sus problematicas, y en especial, que es lo que les frena a aumentar sus ventas a partir de la herramienta de la publicidad.
+    </p>
+    <form id="survey-form">
+        <section id="datos-personales">
+
+          <label for="name" id="name-label" descendant="#survey-form">Name</label>
+          <input id="name" required type="text" placeholder="Tu nombre"><br>
+          <label for="email" id="email-label">Email</label>
+          <input id="email" required type="email" placeholder= '...@....com'><br>
+          <label for="Age" id="number-label">Age</label>
+          <input id="number"  type="number" min="12" max="120" placeholder= "Edad" descendant="#survey-form">
+        </section>
+
+        <section id='encuesta'>
+          <label for="dropdown" id="dropdown-label">Donde ha corrido anuncios?</label>
+          <Select id="dropdown">Donde ha corrido anuncios?
+            <option>(Seleccione una)</option>
+            <option value="Google-Ads">Google Ads</option>
+            <option value="Meta">Meta</option>  
+          </Select>
+
+          <label for="resultados" id="dropdown-label">Si corrio anuncios ya, como fueron sus resultados?</label>
+          <Select id="resultados">Donde ha corrido anuncios?
+            <option>(Seleccione una)</option>
+            <option value="Malos">Malos</option>
+            <option value="Regulares">Regulares</option>
+            <option value="Satisfactorios">Satisfactorios</option>
+            </Select>
+            <p id="pregunta" class="pregunta">Que siente que podria mejorar, o que le falta para tener exito en sus publicidades?</p>
+
+            <label for="faltadeconocimiento" id="radio2" class="radio"><input value="FCM" type="radio" id="faltadeconocimiento" name="falla">Falta de conocimiento de mercado</label>
+
+            <label for="segmentacion" id="radio2" class="radio"><input value="SE" type="radio" id="segmentacion" name="falla">Segmentacion Erronea</label>           
+        
+
+             <label for="presupuesto" id="radio2" class="radio"><input value="EP" type="radio" id="presupuesto" name="falla">Error en el presupuesto</label>
+
+      
+      <p id="pregunta" class="pregunta">Que producto de nuestra agencia cree que le podria ser de mayor ayuda?</p>
+       <label>
+            <input type="checkbox" name="Planificacion-de-Pauta" value="Planificacion-de-Pauta">
+            Planificacion de Pauta
+        </label>
+
+        <label>
+            <input type="checkbox" name="Puesta-a-punto" value="Puesta-a-punto">
+            Puesta a punto
+        </label>
+        <label>
+            <input type="checkbox" name="Gesion-de-anuncios" value="Gesion-de-anuncios">
+            Gesion de anuncios
+        </label>
+        </section>
+        
+
+        <p id="pregunta" class="pregunta" >Haganos saber cualquier pregunta o comentario que desee hacer </p>
+        <textarea>Comentarios adicionales...
+        </textarea>
+
+    <button type="submit" id="submit" descendant="#survey-form">Submit</button>
+
+    </form>
+  </body>
+  
+
+</html>
